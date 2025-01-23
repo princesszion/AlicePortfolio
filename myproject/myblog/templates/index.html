@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
 <head>
-
+{% load static %}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="description" content="Name of your web site">
@@ -20,8 +20,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href=" {% static 'css/plugins.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 <!-- /STYLES -->
 
@@ -44,9 +44,9 @@
 <div class="waxon_tm_all_wrap" data-magic-cursor="show">
 	
 	<!-- SETTINGS -->
-	<div class="waxon_tm_settings">
+	<!-- <div class="waxon_tm_settings">
 		<div class="icon">
-			<img class="svg" src="img/svg/setting.svg" alt="" />
+			<img class="svg" src="{% static 'img/svg/setting.svg' %}" alt="" />
 			<a class="link" href="#"></a>
 		</div>
 		<div class="wrapper">
@@ -68,10 +68,10 @@
 			<span class="title">Magic Cursor</span>
 			<ul class="cursor">
 				<li><a class="showme show" href="#"></a></li>
-				<li><a class="hide" href="#"><img class="svg" src="img/svg/arrow.svg" alt="" /></a></li>
+				<li><a class="hide" href="#"><img class="svg" src="{% static 'img/svg/arrow.svg' %}" alt="" /></a></li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 	<!-- /SETTINGS -->
 	
 	<!-- TOPBAR -->
@@ -178,7 +178,7 @@
 			<div class="leftpart"></div>
 			<div class="rightpart">
 				<div class="inner">
-					<div class="image" data-img-url="img/slider/Alice.png"></div>
+					<div class="image" data-img-url="{% static 'img/slider/Alice.png' %}"></div>
 					<div class="overlay_image"></div>
 					<div class="myOverlay"></div>
 				</div>
@@ -207,7 +207,7 @@
 		<div class="container">
 			<div class="about_inner">
 				<div class="left">
-					<img class="thumbnail" src="img/about/Alice.png" alt="" />  <!-- Animation Image classes: thumbnail, thumbnail-2, thumbnail-3, thumbnail-4,-->
+					<img class="thumbnail" src="{% static 'img/about/Alice.png' %}" alt="" />  <!-- Animation Image classes: thumbnail, thumbnail-2, thumbnail-3, thumbnail-4,-->
 				</div>
 				<div class="right">
 					<div class="name">
@@ -333,7 +333,7 @@
 							<div class="image">
 								<img src="https://wit21hub.com/wp-content/uploads/2021/04/wit21-Hub-Copy.png" alt="" style="height: 100px;"/>
 								<div class="main" data-img-url="https://wit21hub.com/wp-content/uploads/2021/04/wit21-Hub-Copy.png"></div>
-								<a class="full_link popup-vimeo" href="https://wit21hub.com/wp-content/uploads/2021/04/wit21-Hub-Copy.png"></a>
+								<a class="full_link popup-vimeo" href="https://wit21hub.com/"></a>
 							</div>
 							<div class="title">
 								<h3><a href="https://wit21hub.com/">Wit21 Hub</a></h3>
@@ -345,7 +345,7 @@
 							<div class="image">
 								<img src="https://i.etsystatic.com/43192502/r/il/cd7100/5185043693/il_1140xN.5185043693_s4x3.jpg" alt="" style="height:150px " />
 								<div class="main" data-img-url="https://yt3.googleusercontent.com/1aCdgEKzbJnuP-_zxARCfcddrFz-94dgpAt-RP9AK_c6yR6w908Td5Q3zB_IyHof77dyn4NJ4g=s160-c-k-c0x00ffffff-no-rj"></div>
-								<a class="full_link popup-youtube" href="https://i.etsystatic.com/43192502/r/il/cd7100/5185043693/il_1140xN.5185043693_s4x3.jpg"></a>
+								<a class="full_link popup-youtube" href="https://www.youtube.com/watch?v=-Nfeq2En-3A"></a>
 							</div>
 							<div class="title">
 								<h3><a href="https://www.youtube.com/@ToddlerLearning360/videos">ToddlerLearning360</a></h3>
@@ -357,7 +357,7 @@
 							<div class="image">
 								<img src="https://img.rss.com/thegodwardteen/400/20231106_111156_07411442e5daa9c81a3e08651998eb0e.jpg" alt="" style="height: 150px;" />
 								<div class="main" data-img-url="https://img.rss.com/thegodwardteen/400/20231106_111156_07411442e5daa9c81a3e08651998eb0e.jpg"></div>
-								<a class="full_link soundcloude_link mfp-iframe audio" href="https://img.rss.com/thegodwardteen/400/20231106_111156_07411442e5daa9c81a3e08651998eb0e.jpg"></a>
+								<a class="full_link soundcloude_link mfp-iframe audio" href="https://rss.com/podcasts/thegodwardteen/"></a>
 							</div>
 							<div class="title">
 								<h3><a href="https://rss.com/podcasts/thegodwardteen/">The Godward Teen</a></h3>
@@ -367,12 +367,12 @@
 					<li class="modalbox">
 						<div class="list_inner">
 							<div class="image">
-								<img src="img/presentation/2.png" alt="" style="height: 150px;" />
-								<div class="main" data-img-url="img/presentation/2.png"></div>
-								<a class="full_link portfolio_popup" href=img/presentation/2.png></a>
+								<img src="{% static 'img/presentation/2.png' %}" alt="" style="height: 150px;" />
+								<div class="main" data-img-url="{% static 'img/presentation/2.png' %}"></div>
+								<a class="full_link soundcloude_link mfp-iframe audio" href= "https://www.instagram.com/thisjustbepodcast/p/C6zqRVnoLXO/?img_index=1"></a>
 							</div>
 							<div class="title">
-								<h3><a class="portfolio_popup" href="https://www.instagram.com/thisjustbepodcast/p/C6zqRVnoLXO/?img_index=1">JustBe Podcast</a></h3>
+								<h3><a href="https://www.instagram.com/thisjustbepodcast/p/C6zqRVnoLXO/?img_index=1">JustBe Podcast</a></h3>
 							</div>
 						</div>
 						
@@ -384,27 +384,42 @@
 							<div class="image">
 								<img src="https://midark.org/assets/img/hero-img.png" alt="" style="height: 150px;"/>
 								<div class="main" data-img-url="https://midark.org/assets/img/hero-img.png"></div>
-								<a class="full_link portfolio_popup" href="https://midark.org/assets/img/hero-img.png"></a>
+								<a class="full_link popup-youtube" href="https://midark.org/"></a>
 							</div>
 							<div class="title">
-								<h3><a class="portfolio_popup" href="https://midark.org/">Midark Rwanda</a></h3>
+								<h3><a href="https://midark.org/">Midark Rwanda</a></h3>
 							</div>
 						</div>
 						
 					</li>
-					<li class="modalbox">
+					<!-- <li class="youtube">
 						<div class="list_inner">
 							<div class="image">
 								<img src="https://www.penboutique.com/cdn/shop/articles/Things_to_Consider_When_Buying_a_Calligraphy_Pen.jpg?v=1615777978" alt="" style="height: 150px;"/>
 								<div class="main" data-img-url="https://www.penboutique.com/cdn/shop/articles/Things_to_Consider_When_Buying_a_Calligraphy_Pen.jpg?v=1615777978"></div>
-								<a class="full_link portfolio_popup" href="#"></a>
+								<a class="full_link popup-youtube" href="#blog"></a>
 							</div>
 							<div class="title">
-								<h3><a class="portfolio_popup" href="#">Reddi-Raita</a></h3>
+								<h3><a href="#blog">Reddi-Raita</a></h3>
 							</div>
 						</div>
-						
+					</li> -->
+
+					<li class="vimeo">
+						<div class="list_inner">
+							<div class="image">
+								<img src="https://www.penboutique.com/cdn/shop/articles/Things_to_Consider_When_Buying_a_Calligraphy_Pen.jpg?v=1615777978" alt="" style="height: 150px;"/>
+								<div class="main" data-img-url="https://www.penboutique.com/cdn/shop/articles/Things_to_Consider_When_Buying_a_Calligraphy_Pen.jpg?v=1615777978"></div>
+								<a class="full_link popup-vimeo" href="#blog"></a>
+							</div>
+							<div class="title">
+								<h3><a href="#blog">Wit21 Hub</a></h3>
+							</div>
+						</div>
 					</li>
+
+
+
 				</ul>
 			</div>
 		</div>
@@ -476,121 +491,27 @@
 			</div>
 			<div class="news_inner">
 				<div style="padding-bottom: 5%;font-weight: bold;">I share my heart through my poems here.  Feel free to stop by here. </div>
-				<ul>
-					<li class="wow fadeInDown" data-wow-duration="0.8s">
-						<div class="list_inner">
-							<div class="image">
-								<img src="img/thumbs/4-3.jpg" alt="" />
-								<div class="main" data-img-url="img/news/1.jpg"></div>
-								<a class="full_link" href="#"></a>
-							</div>
-							<div class="details">
-								<div class="extra">
-									<p class="date">By <a href="#">Alex Watson</a> <span>Sep 27, 2023</span></p>
+				<div class="row d-flex">
+					{% for post in posts %}
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="{% url 'blog_detail' post.pk %}" class="block-20" style="background-image: url('{{ post.image.url }}');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<div class="d-flex align-items-center mb-3 meta">
+									<p class="mb-0">
+										<span class="mr-2">{{ post.created_at|date:"F d, Y" }}</span>
+										<a href="#" class="mr-2">{{ post.author }}</a>
+										<!-- You can add comment count logic here if needed -->
+									</p>
 								</div>
-								<h3 class="title"><a href="#">Developers watch out for these burnout symptoms</a></h3>
+								<h3 class="heading"><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h3>
+								<p>{{ post.content|truncatewords:20 }}</p>
 							</div>
-							
-							<!-- Modalbox Info Start -->
-							<div class="news_hidden_details">
-								<div class="news_popup_informations">
-									<div class="text">
-										<p>Waxon is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.</p>
-										<p>In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.</p>
-										<p>That’s why more companies are not only reevaluating their website’s design but also partnering with Waxon, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.</p>
-									</div>
-								</div>
-							</div>
-							<!-- /Modalbox Info End -->
-							
 						</div>
-					</li>
-					<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.2s">
-						<div class="list_inner">
-							<div class="image">
-								<img src="img/thumbs/4-3.jpg" alt="" />
-								<div class="main" data-img-url="img/news/2.jpg"></div>
-								<a class="full_link" href="#"></a>
-							</div>
-							<div class="details">
-								<div class="extra">
-									<p class="date">By <a href="#">Bona Green</a> <span>Sep 22, 2023</span></p>
-								</div>
-								<h3 class="title"><a href="#">How to be appreciated for your work as a developer</a></h3>
-							</div>
-							
-							<!-- Modalbox Info Start -->
-							<div class="news_hidden_details">
-								<div class="news_popup_informations">
-									<div class="text">
-										<p>Waxon is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.</p>
-										<p>In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.</p>
-										<p>That’s why more companies are not only reevaluating their website’s design but also partnering with Waxon, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.</p>
-									</div>
-								</div>
-							</div>
-							<!-- /Modalbox Info End -->
-							
-						</div>
-					</li>
-					<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">
-						<div class="list_inner">
-							<div class="image">
-								<img src="img/thumbs/4-3.jpg" alt="" />
-								<div class="main" data-img-url="img/news/3.jpg"></div>
-								<a class="full_link" href="#"></a>
-							</div>
-							<div class="details">
-								<div class="extra">
-									<p class="date">By <a href="#">Ave Smith</a> <span>August 30, 2023</span></p>
-								</div>
-								<h3 class="title"><a href="#">How web developers can collaborate better</a></h3>
-							</div>
-							
-							<!-- Modalbox Info Start -->
-							<div class="news_hidden_details">
-								<div class="news_popup_informations">
-									<div class="text">
-										<p>Waxon is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.</p>
-										<p>In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.</p>
-										<p>That’s why more companies are not only reevaluating their website’s design but also partnering with Waxon, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.</p>
-									</div>
-								</div>
-							</div>
-							<!-- /Modalbox Info End -->
-							
-						</div>
-					</li>
-
-					<li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">
-						<div class="list_inner">
-							<div class="image">
-								<img src="img/thumbs/4-3.jpg" alt="" />
-								<div class="main" data-img-url="img/news/3.jpg"></div>
-								<a class="full_link" href="#"></a>
-							</div>
-							<div class="details">
-								<div class="extra">
-									<p class="date">By <a href="#">Ave Smith</a> <span>August 30, 2023</span></p>
-								</div>
-								<h3 class="title"><a href="#">How web developers can collaborate better</a></h3>
-							</div>
-							
-							<!-- Modalbox Info Start -->
-							<div class="news_hidden_details">
-								<div class="news_popup_informations">
-									<div class="text">
-										<p>Waxon is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.</p>
-										<p>In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.</p>
-										<p>That’s why more companies are not only reevaluating their website’s design but also partnering with Waxon, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.</p>
-									</div>
-								</div>
-							</div>
-							<!-- /Modalbox Info End -->
-							
-						</div>
-					</li>
-				</ul>
+					</div>
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -612,35 +533,89 @@
 				<div class="wrapper">
 					<div class="left wow fadeInLeft" data-wow-duration="0.8s">
 						<div class="fields">
-							<form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
-								<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+							<form method="post" class="contact_form" id="contact_form" autocomplete="off">
+								{% csrf_token %}
+								<div class="returnmessage">{% if messages %}
+									<ul class="messages">
+										{% for message in messages %}
+											<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+										{% endfor %}
+									</ul>
+								{% endif %}</div>
 								<div class="empty_notice"><span>Please Fill Required Fields</span></div>
 								<div class="first">
+									
 									<ul>
 										<li>
-											<input id="name" type="text" placeholder="Name">
+											<div class="col-md-6">
+												<div class="form-control">{{ form.full_name }}</div>
+												{% if form.full_name.errors %}
+												<div class="alert alert-danger">
+													{{ form.full_name.errors }}
+												</div> 
+									 			{% endif %} 
+											</div>
 										</li>
 										<li>
-											<input id="organisation" type="text" placeholder="Organisation">
+											<div class="col-md-6">
+												<div class="form-control">{{ form.organisation }}</div>
+												{% if form.organisation.errors %}
+													<div class="alert alert-danger">
+														{{ form.organisation.errors }}
+													</div> 
+												{% endif %} 
+											</div>
 										</li>
 										<li>
-											<input id="email" type="text" placeholder="Email">
+											<div class="col-md-6">
+												<div class="form-control">{{ form.email }}</div>
+												{% if form.email.errors %}
+													<div class="alert alert-danger">
+														{{ form.email.errors }}
+													</div> 
+												{% endif %} 
+									 
+											</div>
 										</li>
 										<li>
-											<input id="phone" type="text" placeholder="Phone">
+											<div class="col-md-6">
+												<div class="form-control"> {{ form.phone }} </div>
+												{% if form.phone.errors %}
+													<div class="alert alert-danger">
+														{{ form.phone.errors }}
+													</div> 
+												{% endif %} 
+											</div>
+										</li>
+										<li>
+											<div class="col-md-6">
+												<div class="form-control"> {{ form.subject }} </div>
+												{% if form.subject.errors %}
+													<div class="alert alert-danger">
+														{{ form.subject.errors }}
+													</div> 
+												{% endif %} 
+											</div>
 										</li>
 									</ul>
 								</div>
 								<div class="last">
-									<textarea id="message" placeholder="Message"></textarea>
+									{{ form.message }}
+									{% if form.message.errors %}
+										<div class="alert alert-danger">
+											{{ form.message.errors }}
+										</div> 
+									 {% endif %} 
 								</div>
 								<div class="waxon_tm_button" data-position="center">
-									<a id="send_message" href="#">
-										<span>Send Message</span>
-									</a>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+										</div>
+									</div>
 								</div>
 								
-								<!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
+								
 								
 							</form>
 						</div>
@@ -733,10 +708,11 @@
 <!-- / WRAPPER ALL -->
 	
 <!-- SCRIPTS -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script data-cfasync="false" src=" {% static '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="js/jquery.js"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
-<script src="js/plugins.js"></script>	
-<script src="js/init.js"></script>
+<script src=" {% static 'js/plugins.js' %}"></script>	
+<script src=" {% static 'js/init.js' %}"></script>
 <!-- /SCRIPTS -->
 
 </body>
