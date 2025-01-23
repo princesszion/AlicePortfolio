@@ -326,7 +326,7 @@
 					 and responsibilities and carried out baseline surveys and action researches.</p>
 			</div>
 			<div class="portfolio_inner">
-								<p>Over the last 5 years, I have been at the forefront of building the following organisations and key initiatives across Africa.</p>
+				<p>Over the last 5 years, I have been at the forefront of building the following organisations and key initiatives across Africa.</p>
 				<ul class="gallery_zoom">
 					<li class="vimeo">
 						<div class="list_inner">
@@ -491,22 +491,22 @@
 			</div>
 			<div class="news_inner">
 				<div style="padding-bottom: 5%;font-weight: bold;">I share my heart through my poems here.  Feel free to stop by here. </div>
-				<div class="row d-flex">
+				<div class="container">
 					{% for post in posts %}
-					<div class="col-md-4 d-flex ftco-animate">
-						<div class="blog-entry justify-content-end">
-							<a href="{% url 'blog_detail' post.pk %}" class="block-20" style="background-image: url('{{ post.image.url }}');">
-							</a>
+					<div class="col-md-4">
+						<div>
+							<a href="{% url 'blog_detail' post.pk %}"></a>
 							<div class="text mt-3 float-right d-block">
-								<div class="d-flex align-items-center mb-3 meta">
-									<p class="mb-0">
+								<div>
+									<p>
 										<span class="mr-2">{{ post.created_at|date:"F d, Y" }}</span>
 										<a href="#" class="mr-2">{{ post.author }}</a>
 										<!-- You can add comment count logic here if needed -->
 									</p>
 								</div>
-								<h3 class="heading"><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h3>
+								<h3><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h3>
 								<p>{{ post.content|truncatewords:20 }}</p>
+								<img src="{{ post.image.url }}" alt="{{ post.title }}">
 							</div>
 						</div>
 					</div>
