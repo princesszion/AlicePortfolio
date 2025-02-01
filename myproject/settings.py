@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-mvd#9@lq5$l&ih%$spmlm*v0(1s5_$5-11ect$4#f7bo0r-q8l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nolimit-aliceapp.fjyxll.easypanel.host','alice.jacksonandalice.com']
+ALLOWED_HOSTS = ['127.0.0.1','nolimit-aliceapp.fjyxll.easypanel.host','alice.jacksonandalice.com']
 
 
 # Application definition
