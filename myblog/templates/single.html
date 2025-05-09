@@ -48,7 +48,7 @@
 				<div class="menu">
 					<div class="links">
 						<ul class="anchor_nav">
-							<li class="current">
+							<li>
 								<a href="{% url 'home' %}#home">
 									<span class="first">Home</span>
 									<span class="second">Home</span>	
@@ -137,26 +137,28 @@
 	
 	
 	
-	
-	
-	<!-- PORTFOLIO -->
-	<div class="waxon_tm_portoflio" id="portfolio">
-		<div class="container" >
-			<div class="portfolio_inner" >
-                <h2 class="mb-3">{{ post.title }}</h2>	
-                {% if post.image %}
-        <p>
-          <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
-        </p>
-        {% endif %}		
-				<ul class="gallery_zoom">
-                    <p style="text-align: justify;">{{ post.content }}</p>
-
-				</ul>
-			</div>
+	<!-- BLOG DETAIL -->
+<div class="waxon_tm_blog_detail" id="blog_detail">
+	<div class="container">
+	  <div class="blog_post_wrapper">
+		<h2 class="post-title">{{ post.title }}</h2>
+		
+  
+		{% if post.image %}
+		<div class="post-image">
+		  <img src="{{ post.image.url }}" alt="{{ post.title }}">
 		</div>
-	</div>	<!-- /PORTFOLIO -->
-
+		{% endif %}
+  
+		<div class="post-content">
+		  <p>{{ post.content|linebreaks }}</p>
+		</div>
+		<small>by {{ post.author }}</small>
+	  </div>
+	</div>
+  </div>
+  <!-- /BLOG DETAIL -->
+  
 
 
 	
