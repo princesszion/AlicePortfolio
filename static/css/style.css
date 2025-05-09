@@ -3264,6 +3264,37 @@ ul.gallery_zoom.grid-3col-vertical {
 	object-fit: cover;
 	display: block;
   }
+  @media (max-width: 768px) {
+  ul.gallery_zoom.grid-3col-vertical {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.gallery_zoom.grid-3col-vertical li {
+    width: 100% !important;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .list_inner {
+    width: 100%;
+  }
+
+  .list_inner .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .portfolio_inner {
+    padding: 0 10px;
+  }
+}
+
 /* ==== PUBLICATIONS SECTION FIXES ==== */
 .publication-list {
 	padding-left: 20px;
@@ -3490,7 +3521,7 @@ ul.gallery_zoom.grid-3col-vertical {
 	  font-size: 16px;
 	}
   }
-/* === FINAL CONTACT SECTION FIX === */
+/* === FINAL CONTACT SECTION FIX ===
 .contact_wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -3549,4 +3580,70 @@ ul.gallery_zoom.grid-3col-vertical {
     max-width: 100%;
     flex: 0 0 100%;
   }
+} */
+
+.contact-layout {
+  margin-top: 40px;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact_info {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@media (max-width: 991px) {
+  .contact-layout > div {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .contact_info {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* === Read More Button Styling === */
+.read-more-btn {
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.read-more-btn:hover {
+  background-color: #0f5bd8;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact_form input[type="submit"] {
+  text-transform: uppercase;
+  font-weight: bold;
 }
