@@ -94,13 +94,14 @@ h1, h2, h3, h4, h5, h6{
 	position:relative;
 	clear:both;
 	
+	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 @media (max-width: 1040px) {
-.container{padding:0px 20px;}
+.container{padding:0px 0px;}
 }
 
 .waxon_tm_all_wrap{
@@ -3139,4 +3140,510 @@ body.dark .waxon_tm_settings .cursor li .svg,
 	.waxon_tm_intro_fixed_price .pricing-info, .waxon_tm_intro_fixed_price .anim{width: 50px;height: 50px;line-height: 50px;bottom: 25px;right: 25px;font-size: 15px;}
 	.waxon_tm_intro_page .hero_header .content{width: 100%;}
 	.waxon_tm_intro_page .hero_header .content .titlehero{font-size: 19px;}
+}
+
+
+/* ===== CUSTOM FIXES FOR BLOG SECTION RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+  .waxon_tm_news ul li {
+    width: 100% !important;
+    padding-left: 0 !important;
+    margin-bottom: 30px;
+  }
+
+  .waxon_tm_news ul {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .waxon_tm_news ul li .list_inner {
+    margin: auto;
+  }
+
+  .waxon_tm_news .details {
+    padding: 20px !important;
+    text-align: center;
+  }
+
+  .waxon_tm_news ul li .image .main {
+    background-position: center !important;
+  }
+
+  .waxon_tm_main_title,
+  .waxon_tm_news .news_inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* ===== UNIVERSAL RESPONSIVENESS + ALIGNMENT FIXES ===== */
+
+@media (max-width: 991px) {
+
+  .container {
+    padding: 0 15px !important;
+  }
+
+  .waxon_tm_main_title,
+  .waxon_tm_about .about_inner,
+  .waxon_tm_service ul,
+  .waxon_tm_contact .contact_inner .wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .waxon_tm_about .about_inner .left,
+  .waxon_tm_about .about_inner .right,
+  .waxon_tm_contact .left,
+  .waxon_tm_contact .right {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .waxon_tm_about .right {
+    padding-top: 30px;
+  }
+
+  .waxon_tm_news ul li,
+  .waxon_tm_portoflio .portfolio_inner ul li {
+    width: 100% !important;
+    padding-left: 0 !important;
+    margin-bottom: 30px;
+    float: none !important;
+  }
+
+  .waxon_tm_news ul,
+  .waxon_tm_portoflio .portfolio_inner ul {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .waxon_tm_news ul li .list_inner,
+  .waxon_tm_portoflio .portfolio_inner ul li .list_inner {
+    margin: auto;
+  }
+
+  .waxon_tm_news .details,
+  .waxon_tm_portoflio .portfolio_inner ul li .details {
+    text-align: center;
+    padding: 20px !important;
+  }
+
+  .waxon_tm_contact .desc {
+    max-width: 100% !important;
+    padding-top: 30px;
+  }
+
+  .waxon_tm_hero .content_inner h3 {
+    font-size: 48px !important;
+  }
+}
+/* === 3 Columns, 2 Rows (Vertical Flow) === */
+ul.gallery_zoom.grid-3col-vertical {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: column;
+	gap: 30px;
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
+  }
+  
+  ul.gallery_zoom.grid-3col-vertical li {
+	list-style: none;
+	float: none !important;
+	width: 100% !important;
+  }
+  
+  ul.gallery_zoom.grid-3col-vertical .image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+  }
+  @media (max-width: 768px) {
+  ul.gallery_zoom.grid-3col-vertical {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.gallery_zoom.grid-3col-vertical li {
+    width: 100% !important;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .list_inner {
+    width: 100%;
+  }
+
+  .list_inner .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .portfolio_inner {
+    padding: 0 10px;
+  }
+}
+
+/* ==== PUBLICATIONS SECTION FIXES ==== */
+.publication-list {
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 1.6;
+  }
+  
+  .coming-soon {
+	margin-top: 20px;
+	font-style: italic;
+	font-weight: bold;
+	color: #000;
+  }
+  
+  .book-subtitle {
+	font-weight: 500;
+	margin-top: 10px;
+	color: #222;
+  }
+  
+  .book-description {
+	margin-top: 10px;
+	font-size: 15px;
+	color: #444;
+	line-height: 1.8;
+  }
+	
+  #portfolio {
+	margin-bottom: 40px !important;
+  }
+  
+  #publications {
+	padding-top: 0 !important;
+	margin-top: 0 !important;
+  }
+  #portfolio {
+	padding-top: 0px !important;
+	margin-top: 0 !important;
+  }
+  #awards {
+	padding-top: 0px !important;
+	margin-top: 0 !important;
+  }
+  .waxon_tm_main_title .title {
+	width: 100%;
+	text-align: center;
+	float: none !important;
+	margin: 0 auto;
+	padding-bottom: 0px;
+  }
+  .waxon_tm_main_title .title h3 {
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 900;
+	text-transform: uppercase;
+  }
+/* === AWARDS SECTION === */
+.waxon_tm_awards {
+	padding-top: 40px;
+	padding-bottom: 60px;
+
+	
+  }
+  
+  .awards_grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+  }
+  
+  .award_card {
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.08);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	padding: 20px 25px;
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+	transition: all 0.3s ease;
+  }
+  
+  .award_card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+  
+  .award_card p {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+  }
+  
+  .award_card a {
+	text-decoration: none;
+	font-weight: 600;
+	color: #1a73e8;
+  }
+  
+  .award_card a:hover {
+	text-decoration: underline;
+  }
+/* Eliminate unnecessary space between sections */
+#publications {
+	margin-bottom: 30px !important;
+	padding-bottom: 0 !important;
+  }
+  
+  #waxon_tm_awards,
+  #awards {
+	margin-top: 0 !important;
+	padding-top: 30px !important;
+  }
+  #blog .waxon_tm_main_title {
+	padding-top: 40px;
+	text-align: center;
+  }
+/* === BLOG GRID LAYOUT === */
+.blog-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	margin-top: 40px;
+  }
+  
+  .blog-card {
+	flex: 0 0 30%;
+	max-width: 30%;
+	display: flex;
+	align-items: stretch;
+  }
+  
+  .blog-card .card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  .blog-card .card-img-top {
+	height: 200px;
+	object-fit: cover;
+	width: 100%;
+  }
+  
+  .blog-card .card-body {
+	flex-grow: 1;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+  }
+  #blog{
+	margin-bottom: 30px !important;
+	padding-bottom: 0 !important;
+  }
+  
+  #blog {
+	margin-top: 0 !important;
+	padding-top: 30px !important;
+  }
+  #blog .waxon_tm_main_title {
+	padding-top: 40px;
+	text-align: center;
+  }
+  @media (max-width: 991px) {
+	.blog-card {
+	  flex: 0 0 45%;
+	  max-width: 45%;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.blog-card {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+  }
+/* === BLOG DETAIL PAGE === */
+.waxon_tm_blog_detail {
+	padding: 60px 0;
+	background: #fff;
+  }
+  
+  .blog_post_wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  .post-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: center;
+	padding-top: 50px;
+  }
+  
+  .post-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 30px;
+  }
+  
+  .post-content {
+	font-size: 17px;
+	color: #444;
+	line-height: 1.8;
+	text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+	.post-title {
+	  font-size: 24px;
+	}
+  
+	.post-content {
+	  font-size: 16px;
+	}
+  }
+/* === FINAL CONTACT SECTION FIX ===
+.contact_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.form_section {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.contact_info {
+  flex: 0 0 30%;
+  max-width: 30%;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact_form textarea {
+  min-height: 150px;
+}
+
+.contact_form input[type="submit"] {
+  background: #222;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.contact_form input[type="submit"]:hover {
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .form_section,
+  .contact_info {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+} */
+
+.contact-layout {
+  margin-top: 40px;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact_info {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@media (max-width: 991px) {
+  .contact-layout > div {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .contact_info {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* === Read More Button Styling === */
+.read-more-btn {
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.read-more-btn:hover {
+  background-color: #0f5bd8;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact_form input[type="submit"] {
+  text-transform: uppercase;
+  font-weight: bold;
 }
